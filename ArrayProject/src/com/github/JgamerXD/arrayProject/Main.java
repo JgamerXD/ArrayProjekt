@@ -1,6 +1,5 @@
 package com.github.JgamerXD.arrayProject;
 
-import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -50,7 +49,9 @@ public class Main {
 			input = sc.nextLine();
 			inputArgs = input.split(" ");
 			if(inputArgs[0].equals("stop"))
-				running = false;
+                running = false;
+            if(inputArgs[0].trim().equals(""))
+                continue;
 
 
 			try
